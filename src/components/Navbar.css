@@ -1,0 +1,103 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Add padding to prevent content from being hidden behind the fixed navbar */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c457a8;
+  padding: 7px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img.pokimon {
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 0px 5px;
+}
+
+.l1 {
+  display: flex;
+
+}
+.l1 {
+  text-decoration: none;
+  color: #08110a;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+  margin-left: 15px;
+  gap: 5px;
+}
+
+.l1:hover{
+  color: #ff5500;
+
+}
+
+.l1::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff5500;
+  bottom: -5px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.l1:hover::after{
+  width: 100%;
+  left: 0px;
+}
+.links {
+  display: flex;
+  gap: 10px;
+
+  
+}
+
+.links a {
+  text-decoration: none;
+  color: #08110a;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+  margin-right: 8px;
+}
+
+.links a:hover {
+  color: #ff5500;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff5500;
+  left: 50%;
+  bottom: -5px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+  left: 0;
+}
